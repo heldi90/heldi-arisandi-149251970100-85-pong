@@ -16,4 +16,19 @@ public class Ball : MonoBehaviour
     {
 
     }
+
+    public void gerakAwalPlayer2Lose()
+    {
+        speed = new Vector2(7f, Random.Range(-7, 7));
+        rig = GetComponent<Rigidbody2D>();
+        rig.velocity = speed;
+    }
+
+
+    public void gerakAwalPlayer1Lose()
+    {
+        speed = new Vector2(-7f, Random.Range(-7, 7));
+        rig = GetComponent<Rigidbody2D>();
+        rig.velocity = speed;
+    }
 }
