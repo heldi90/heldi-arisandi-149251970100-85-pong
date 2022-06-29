@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    public Vector2 speed;
-    Rigidbody2D rig;
+    public float speed;
+    public Rigidbody2D rig;
+    public float speedVelocity;
+
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        rig.velocity = speed;
+        rig.velocity = new Vector2(speed, rig.velocity.y);
     }
 
     // Update is called once per frame
@@ -19,16 +21,27 @@ public class Ball : MonoBehaviour
 
     public void gerakAwalPlayer2Lose()
     {
-        speed = new Vector2(7f, Random.Range(-7, 7));
+
         rig = GetComponent<Rigidbody2D>();
-        rig.velocity = speed;
+
+        rig.velocity = new Vector2(speed, Random.Range(-7, 7));
     }
 
 
     public void gerakAwalPlayer1Lose()
     {
-        speed = new Vector2(-7f, Random.Range(-7, 7));
         rig = GetComponent<Rigidbody2D>();
-        rig.velocity = speed;
+
+        rig.velocity = new Vector2(-speed, Random.Range(-7, 7));
     }
+
+
+    public void outs()
+    {
+        rig = GetComponent<Rigidbody2D>();
+
+        rig.velocity = new Vector2(-speed, Random.Range(-7, 7));
+    }
+
+
 }

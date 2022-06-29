@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\Ball.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\Triger.cs" />
+     <Compile Include="Assets\Scripts\SkillManager.cs" />
+     <Compile Include="Assets\Scripts\ManagerPrefab.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
