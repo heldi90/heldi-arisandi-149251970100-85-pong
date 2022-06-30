@@ -3,16 +3,21 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - Goal
+    - ManagerPrefab
     - PlayerManager
     - Score
+    - SkillManager
     - Triger
     - UIManager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -65,29 +70,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1552}
     - Class: 114
-      Script: {instanceID: 1860}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 2524}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2886}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 3112}
+      Script: {instanceID: 2992}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3030}
     - Class: 114
-      Script: {instanceID: 3452}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3962}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 4634}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 5366}
+      Script: {instanceID: 3496}
+    - Class: 114
+      Script: {instanceID: 3636}
+    - Class: 114
+      Script: {instanceID: 3976}
+    - Class: 114
+      Script: {instanceID: 4648}
+    - Class: 114
+      Script: {instanceID: 5380}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -126,29 +139,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1552}
     - Class: 114
-      Script: {instanceID: 1860}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 2266}
+      Script: {instanceID: 2276}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 2874}
+      Script: {instanceID: 2886}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 3112}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3360}
+      Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 3482}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3622}
+      Script: {instanceID: 3636}
     - Class: 114
-      Script: {instanceID: 4888}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 5284}
+      Script: {instanceID: 5298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -282,6 +295,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 56951574edf886d649dbf625bc808978
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ManagerPrefab
+  - hash:
+      serializedVersion: 2
       Hash: cfdd0010efd7b54c2b7512656dbc9119
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
@@ -330,10 +349,16 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 0bfc569d95fa22565da26d9b801dedd0
+      Hash: de089d0c935c1488240ae5965dccbb30
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerManager
+  - hash:
+      serializedVersion: 2
+      Hash: abd12dc876b441149822e7bd715b0453
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkillManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -480,7 +505,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: d4b12e4ee9541266ac2681aeef7cb8c2
+      Hash: a84ad9625dc11f658c3fdc0d72f95a87
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ball
@@ -716,4 +741,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/GamePlay Pong.unity
-  playerPath: D:/Coding/Game Buatan Heldi/Agate/Pong - heldi-arisandi-149251970100-85.exe
+  playerPath: D:/Coding/Game Buatan Heldi/Agate/tugas 4/Pong - heldi-arisandi-149251970100-85.exe

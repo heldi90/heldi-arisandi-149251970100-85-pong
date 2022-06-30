@@ -5,6 +5,7 @@ public class ManagerPrefab : MonoBehaviour
 
     public GameObject prefab1;
     public GameObject prefab2;
+    public GameObject prefab3;
 
     public GameObject[] clone;
 
@@ -32,6 +33,8 @@ public class ManagerPrefab : MonoBehaviour
             if (Random.Range(1, 6) == 1 || Random.Range(1, 6) == 4 || Random.Range(1, 6) == 5)
             {
                 munculPrefab(Random.Range(1, 4));
+
+
             }
             else
             {
@@ -63,28 +66,74 @@ public class ManagerPrefab : MonoBehaviour
         {
             if (index == 1)
             {
-                Instantiate(prefab1, new Vector2(Random.Range(1f, 6f), Random.Range(-3f, 3f)), Quaternion.identity);
+                int rar = Random.Range(1, 8);
+                if (rar > 4)
+                {
+                    Instantiate(prefab1, new Vector2(Random.Range(1f, 6f), Random.Range(-3f, 3f)), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(prefab3, new Vector2(Random.Range(1f, 6f), Random.Range(-3f, 3f)), Quaternion.identity);
+
+                }
+
+
                 cocok = index;
                 muncul = 5;
             }
 
             if (index == 2)
             {
-                Instantiate(prefab2, new Vector2(Random.Range(2f, 8f), Random.Range(-3f, 3f)), Quaternion.identity);
+
+                int rar = Random.Range(1, 8);
+                if (rar > 4)
+                {
+                    Instantiate(prefab2, new Vector2(Random.Range(2f, 8f), Random.Range(-3f, 3f)), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(prefab3, new Vector2(Random.Range(2f, 8f), Random.Range(-3f, 3f)), Quaternion.identity);
+
+                }
                 cocok = index;
                 muncul = 5;
             }
 
             if (index == 3)
             {
-                Instantiate(prefab1, new Vector2(Random.Range(-1f, -6f), Random.Range(-3f, 3f)), Quaternion.identity);
+
+                int rar = Random.Range(1, 8);
+                if (rar > 4)
+                {
+                    Instantiate(prefab1, new Vector2(Random.Range(-1f, -6f), Random.Range(-3f, 3f)), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(prefab3, new Vector2(Random.Range(-1f, -6f), Random.Range(-3f, 3f)), Quaternion.identity);
+
+                }
+
+
                 cocok = index;
                 muncul = 5;
             }
 
             if (index == 4)
             {
-                Instantiate(prefab2, new Vector2(Random.Range(-2f, -8f), Random.Range(-3f, 3f)), Quaternion.identity);
+                int rar = Random.Range(1, 8);
+                if (rar > 4)
+                {
+                    Instantiate(prefab2, new Vector2(Random.Range(-2f, -8f), Random.Range(-3f, 3f)), Quaternion.identity);
+                }
+                else
+                {
+
+                    Instantiate(prefab3, new Vector2(Random.Range(-2f, -8f), Random.Range(-3f, 3f)), Quaternion.identity);
+                }
+
+
+
+
                 cocok = index;
                 muncul = 5;
 

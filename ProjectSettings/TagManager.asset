@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - skill
+  - manager
   layers:
   - Default
   - TransparentFX

@@ -15,8 +15,20 @@ public class PlayerManager : MonoBehaviour
 
     public Rigidbody2D[] rb;
     public Transform[] tr;
-    // Start is called before the first frame update
 
+
+
+
+    public bool seranganPaddle1;
+    public bool seranganPaddle2;
+    public float durasiSkillPaddle1;
+    public float durasiSkillPaddle2;
+    // Start is called before the first frame update
+    void Start()
+    {
+        seranganPaddle1 = false;
+        seranganPaddle2 = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,6 +38,53 @@ public class PlayerManager : MonoBehaviour
 
         ControllPaddle(1, "Player2", UP_p2, DOWN_p2);
         batasMovePaddle(1);
+
+
+
+
+
+        if (durasiSkillPaddle1 > 0)
+        {
+            tr[0].transform.localScale = new Vector2(tr[0].localScale.x, 3f);
+            durasiSkillPaddle1 -= Time.deltaTime;
+
+            if (durasiSkillPaddle1 <= 0)
+            {
+                tr[0].transform.localScale = new Vector2(tr[0].localScale.x, 1.3f);
+                seranganPaddle1 = false;
+
+                durasiSkillPaddle1 = 0;
+
+            }
+
+        }
+
+
+
+
+
+        if (durasiSkillPaddle2 > 0)
+        {
+            tr[1].transform.localScale = new Vector2(tr[0].localScale.x, 3f);
+
+            durasiSkillPaddle2 -= Time.deltaTime;
+
+            if (durasiSkillPaddle2 <= 0)
+            {
+                tr[1].transform.localScale = new Vector2(tr[1].localScale.x, 1.3f);
+                seranganPaddle2 = false;
+
+                durasiSkillPaddle2 = 0;
+
+            }
+
+        }
+
+
+
+
+
+
     }
 
 
@@ -62,9 +121,20 @@ public class PlayerManager : MonoBehaviour
         }
 
 
+
+
+
     }
 
+    public void serangan1(bool aktif)
+    {
+        seranganPaddle1 = aktif;
+    }
 
+    public void serangan2(bool aktif)
+    {
+        seranganPaddle2 = aktif;
+    }
 
 
 

@@ -26,6 +26,11 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(scenename);
     }
 
+    public void exit()
+    {
+        Application.Quit();
+    }
+
 
 
 }
